@@ -1,10 +1,12 @@
 #include <iostream>
 #include <string>
+#include "dataBaseHeader.h"
+
 
 using namespace std;
 
 int main(int agrc , char *gaga[]){
-    cout << "lelethu git" << endl;
+    int x;
     return 0;
 
 }
