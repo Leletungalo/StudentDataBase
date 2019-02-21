@@ -1,6 +1,6 @@
 #ifndef _DATABASEHEADER
 #define _DATABASEHEADER
-#include <string>
+//#include <string>
 
     namespace NGLLEL001 {
     using namespace std;

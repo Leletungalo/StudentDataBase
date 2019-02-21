@@ -1,5 +1,5 @@
 stDataBase: main.o dataBase.o
-	g++ main.o dataBase.o -o stDataBase
+	g++ -g main.o dataBase.o -o stDataBase
 
 main.o: main.cpp
 	g++ -c main.cpp
