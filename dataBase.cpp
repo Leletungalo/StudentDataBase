@@ -2,6 +2,7 @@
 #include "dataBaseHeader.h"
 #include <string>
 #include <vector>
+#include <fstream>
 
 using namespace std;
     struct students
@@ -29,14 +30,23 @@ void NGLLEL001::addStudent(string name,string surname, string studentNumber, str
    }*/
 }
 void NGLLEL001::readDataBase(){}
-void NGLLEL001::saveDataBase(){}
+void NGLLEL001::saveDataBase(){
+    
+}
 void NGLLEL001::displayStudentRecord(string studentNumber){
-    for(int i = 0; i < database.size(); i++){
-        
-        if (studentNumber == database[i].studentNumber) {
-            cout << database[i].studentNumber << endl;
+    if (database.size() == 0) {
+        cout << "database emty" << endl;
+    }else{
+    
+        for(int i = 0; i < database.size(); i++){
+            
+            if (studentNumber == database[i].studentNumber) {
+                cout << database[i].name << endl;
+                cout << database[i].surname << endl;
+                cout << database[i].studentNumber << endl;
+                cout << database[i].classRecord << endl;
+            } 
         }
-        cout << database[i].studentNumber << endl;
     }
     
 }
