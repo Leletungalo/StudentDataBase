@@ -1,6 +1,7 @@
 #include <iostream>
 #include "dataBaseHeader.h"
 #include <string>
+#include <sstream>
 #include <vector>
 #include <fstream>
 
@@ -11,12 +12,10 @@ using namespace std;
     };
 
 vector<students> database;
-    
 /*adds a students infomation into the database
 */
 void NGLLEL001::addStudent(string name,string surname, string studentNumber, string classRecord){
    students student;
-   
    student.name = name;
    student.surname = surname;
    student.studentNumber =studentNumber;
@@ -29,9 +28,19 @@ void NGLLEL001::addStudent(string name,string surname, string studentNumber, str
     //cout << database.size() << endl;
    }*/
 }
-void NGLLEL001::readDataBase(){}
+void NGLLEL001::readDataBase(){
+    readFromFile();
+
+}
 void NGLLEL001::saveDataBase(){
-    
+   
+    fstream savefile("testFile.txt",ios::out | ios::app);
+    for(auto it = database.begin(); it < database.end(); ++it){
+        /* code */
+        savefile << it[0].name << ", " << it[0].surname << ", " << it[0].studentNumber << ", " << it[0].classRecord << ":" << endl;
+    }
+    savefile.close();
+
 }
 void NGLLEL001::displayStudentRecord(string studentNumber){
     if (database.size() == 0) {
@@ -50,4 +59,53 @@ void NGLLEL001::displayStudentRecord(string studentNumber){
     }
     
 }
-int  NGLLEL001::studentGrade(string studentNumber){}
+int  NGLLEL001::studentGrade(string studentNumber){
+    //deleteFile();
+}
+
+void NGLLEL001::clear(){
+    system("clear");
+}
+
+void NGLLEL001::readFromFile(){
+    string temp;
+    ifstream read("testFile.txt",ios::in);
+    int count = 0;
+    while(getline(read,temp)){
+        istringstream is(temp);
+        string cc, name = "NULL", surname = "NULL" ,stnumber = "NULL",classRec = "NULL";
+       
+        while(getline(is,cc,',')){
+            if (name == "NULL") {
+                /* code */
+                name = cc;
+            }else if (surname == "NULL") {
+                /* code */
+                surname = cc;
+            }else if (stnumber == "NULL") {
+                /* code */
+                stnumber = cc;
+            }else if (classRec == "NULL") {
+                /* code */
+                classRec = cc;
+            }
+        }
+        cout << name << " " << surname << " " << stnumber << " " << classRec << endl;
+        students student;
+        student.name = name;
+        student.surname = surname;
+        student.studentNumber =stnumber;
+        student.classRecord = classRec;
+        database.push_back(student);
+       
+    }
+    read.close();
+}
+
+void NGLLEL001::addform(string name, string surname, string studentNumber, string classRecord){
+
+}
+
+void NGLLEL001::deleteFile(){
+    system("rm testFile.txt");
+}
