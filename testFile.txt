@@ -1,4 +1,6 @@
 lelethu,msuthu,NGKKEG001,85 45 98 75
-nolitha,wowo,HGDTTE002,89 96 41 69
+nolitha,wowo,HGDTTE002,89 96 41 69 
+lelethu,msuthu,NGKKEG001,85 45 98 75
 Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,85 45 98 75
 onke,msetu,HHFIR001,56 98 78 96

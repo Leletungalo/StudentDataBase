@@ -8,6 +8,7 @@ using namespace std;
 
 int main(int agrc , char *gaga[]){
     string selection;
+    cout << "1 Add a student" << '\n' << "2 Read Database" << '\n' << "3 Save Data" << '\n' << "4 Display student infomation" << '\n' << "5 Grade student" << '\n' << "q Quit" << endl;
     cout << "Enter a number (or q to quit) and press return" << endl;
     cin  >> selection;
     
@@ -19,7 +20,9 @@ int main(int agrc , char *gaga[]){
             cout << "add student" << endl;
             NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
             NGLLEL001::addStudent("nolitha","wowo", "HGDTTE002", "89 96 41 69 ");
+            NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
             NGLLEL001::addStudent("Phelokazi","Ngalo", "NGLLEL001", "90 85 45 65");
+            NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
             NGLLEL001::addStudent("onke","msetu", "HHFIR001", "56 98 78 96");
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;

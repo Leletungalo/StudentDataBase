@@ -12,8 +12,6 @@
     int studentGrade(string studentNumber);
     void readFromFile();
     void deleteFile();
-    void addform(string name, string surname, string studentNumber, string classRecord);
-   
     }
 
 #endif

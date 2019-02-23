@@ -15,29 +15,24 @@ vector<students> database;
 /*adds a students infomation into the database
 */
 void NGLLEL001::addStudent(string name,string surname, string studentNumber, string classRecord){
-   students student;
-   student.name = name;
-   student.surname = surname;
-   student.studentNumber =studentNumber;
-   student.classRecord = classRecord;
-   //database.push_back
-   database.push_back(student);
-  /* for(int i = 0; i < database.size(); i++)
-   {
-       cout << database[i].name << endl;
-    //cout << database.size() << endl;
-   }*/
+    students student;
+    student.name = name;
+    student.surname = surname;
+    student.studentNumber =studentNumber;
+    student.classRecord = classRecord;
+
+    database.push_back(student);
+   
 }
 void NGLLEL001::readDataBase(){
-    readFromFile();
+  //  readFromFile();
 
 }
 void NGLLEL001::saveDataBase(){
    
     fstream savefile("testFile.txt",ios::out | ios::app);
     for(auto it = database.begin(); it < database.end(); ++it){
-        /* code */
-        savefile << it[0].name << ", " << it[0].surname << ", " << it[0].studentNumber << ", " << it[0].classRecord << ":" << endl;
+        savefile << it[0].name << "," << it[0].surname << "," << it[0].studentNumber << "," << it[0].classRecord << endl;
     }
     savefile.close();
 
@@ -77,20 +72,16 @@ void NGLLEL001::readFromFile(){
        
         while(getline(is,cc,',')){
             if (name == "NULL") {
-                /* code */
                 name = cc;
             }else if (surname == "NULL") {
-                /* code */
                 surname = cc;
             }else if (stnumber == "NULL") {
-                /* code */
                 stnumber = cc;
             }else if (classRec == "NULL") {
-                /* code */
                 classRec = cc;
             }
         }
-        cout << name << " " << surname << " " << stnumber << " " << classRec << endl;
+        //cout << name << " " << surname << " " << stnumber << " " << classRec << endl;
         students student;
         student.name = name;
         student.surname = surname;
@@ -100,10 +91,6 @@ void NGLLEL001::readFromFile(){
        
     }
     read.close();
-}
-
-void NGLLEL001::addform(string name, string surname, string studentNumber, string classRecord){
-
 }
 
 void NGLLEL001::deleteFile(){
