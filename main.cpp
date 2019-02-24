@@ -8,7 +8,7 @@ using namespace std;
 
 int main(int agrc , char *gaga[]){
     NGLLEL001::clear();
-    NGLLEL001::readFromFile();
+    NGLLEL001::deleteFile();
     string selection;
     cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
     cout << "Enter a number (or q to quit) and press return" << endl;
@@ -39,11 +39,11 @@ int main(int agrc , char *gaga[]){
         }else if (selection == "1") { // display a the infomation in a database
             NGLLEL001::clear();
             NGLLEL001::readDataBase();
-            cout << "read dataBase" << endl;
             cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
         }else if (selection == "2"){ // save the database
+            NGLLEL001::deleteFile();
             NGLLEL001::clear();
             NGLLEL001::saveDataBase();
             cout << "Entered infomation saved" << endl;

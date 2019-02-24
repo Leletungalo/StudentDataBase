@@ -16,6 +16,7 @@ vector<students> database;
 */
 void NGLLEL001::addStudent(string name,string surname, string studentNumber, string classRecord){
     
+    if (database.size() == 0) {
         students student;
         student.name = name;
         student.surname = surname;
@@ -23,6 +24,28 @@ void NGLLEL001::addStudent(string name,string surname, string studentNumber, str
         student.classRecord = classRecord;
 
         database.push_back(student);
+    }else{
+        int count = 0;
+        for(int i = 0; i < database.size() - 1; i++){
+            
+            if (database[i].studentNumber == studentNumber) {
+                database[i].classRecord = classRecord;
+                count++;
+            }
+        }
+
+        if (count == 0) {
+            students student;
+            student.name = name;
+            student.surname = surname;
+            student.studentNumber =studentNumber;
+            student.classRecord = classRecord;
+
+            database.push_back(student);
+        }
+        
+        
+    }
 }
 void NGLLEL001::readDataBase(){
     if (database.size() == 0) {
@@ -39,7 +62,7 @@ void NGLLEL001::readDataBase(){
     }
 }
 void NGLLEL001::saveDataBase(){
-   
+
     fstream savefile;
     savefile.open("testFile.txt",ios::out | ios::app);
     for(auto it = database.begin(); it < database.end(); ++it){
@@ -51,6 +74,7 @@ void NGLLEL001::saveDataBase(){
 void NGLLEL001::displayStudentRecord(string studentNumber){
     if (database.size() == 0) {
         cout << "database emty" << endl;
+        cout << " " << endl;
     }else{
     
         for(int i = 0; i < database.size(); i++){
@@ -60,6 +84,7 @@ void NGLLEL001::displayStudentRecord(string studentNumber){
                 cout << database[i].surname << endl;
                 cout << database[i].studentNumber << endl;
                 cout << database[i].classRecord << endl;
+                cout << " " << endl;
             } 
         }
     }

@@ -11,4 +11,4 @@ run:
 	./stDataBase
 
 clean:
-	rm *.o stDataBase
+	rm *.o stDataBase *.txt
