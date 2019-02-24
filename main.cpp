@@ -7,49 +7,80 @@ using namespace std;
     
 
 int main(int agrc , char *gaga[]){
+    NGLLEL001::clear();
+    NGLLEL001::readFromFile();
     string selection;
-    cout << "1 Add a student" << '\n' << "2 Read Database" << '\n' << "3 Save Data" << '\n' << "4 Display student infomation" << '\n' << "5 Grade student" << '\n' << "q Quit" << endl;
+    cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
     cout << "Enter a number (or q to quit) and press return" << endl;
     cin  >> selection;
     
     /*continus loop for user to make choices and when they quit*/
     for(;;){
         
-        if (selection == "1") { //add a student
+        if (selection == "0") { //add a student
+            string name, surname, studentNumber,classRecord;
+
             NGLLEL001::clear();
-            cout << "add student" << endl;
-            NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
-            NGLLEL001::addStudent("nolitha","wowo", "HGDTTE002", "89 96 41 69 ");
-            NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
-            NGLLEL001::addStudent("Phelokazi","Ngalo", "NGLLEL001", "90 85 45 65");
-            NGLLEL001::addStudent("lelethu","msuthu", "NGKKEG001", "85 45 98 75");
-            NGLLEL001::addStudent("onke","msetu", "HHFIR001", "56 98 78 96");
+            cout << "Enter a name of a student" << endl;
+            cin >> name;
+            cout << "Enter a surname of a student" << endl;
+            cin >> surname;
+            cout << "Enter the student number" << endl;
+            cin >> studentNumber;
+            cin.ignore();
+            cout << "Enter the class record" << endl;
+            getline(cin,classRecord);
+            NGLLEL001::addStudent(name,surname, studentNumber, classRecord);
+
+            NGLLEL001::clear();
+            cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
-        }else if (selection == "2") { // display a the infomation in a database
+        }else if (selection == "1") { // display a the infomation in a database
             NGLLEL001::clear();
             NGLLEL001::readDataBase();
             cout << "read dataBase" << endl;
+            cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
-        }else if (selection == "3"){ // save the database
+        }else if (selection == "2"){ // save the database
             NGLLEL001::clear();
             NGLLEL001::saveDataBase();
-            cout << "save database" << endl;
+            cout << "Entered infomation saved" << endl;
+            cout << " " << endl;
+            cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
-        }else if (selection == "4") { // display a selected student info
+        }else if (selection == "3") { // display a selected student info
             NGLLEL001::clear();
-            cout << "display student info" << endl;
-            NGLLEL001::displayStudentRecord("NGLLEL001");
+            string tempstudentNumber; 
+            cout << "Enter the student number and press return" << endl;
+            cin >> tempstudentNumber;
+            NGLLEL001::displayStudentRecord(tempstudentNumber);
+
+            cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
-        }else if (selection == "5") { // grade a selected student
+        }else if (selection == "4") { // grade a selected student
             NGLLEL001::clear();
-            cout << "grade student" << endl;
-            NGLLEL001::studentGrade("hjfg");
+            string tempstudentNumber;
+            cout << "Enter the student number and press return" << endl;
+            cin >> tempstudentNumber;
+            cout << " " << endl;
+
+            int avarage =  NGLLEL001::studentGrade(tempstudentNumber);
+            if (avarage != -1) {
+                cout << "Stundent avarage "  <<  avarage << endl;
+                cout << " " << endl;
+            }else{
+                cout << "Stundent not found" << endl;
+                cout << " " << endl;
+            }
+            
+            cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
+            
         }else if (selection == "q") {
            break;
         }

@@ -1,6 +1,104 @@
-lelethu,msuthu,NGKKEG001,85 45 98 75
-nolitha,wowo,HGDTTE002,89 96 41 69 
-lelethu,msuthu,NGKKEG001,85 45 98 75
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
 Phelokazi,Ngalo,NGLLEL001,90 85 45 65
-lelethu,msuthu,NGKKEG001,85 45 98 75
+lelethu,msuthu,NGKKEG001,12 100 9 75
 onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+nolitha,wowo,HGDTTE002,89 96 41 69 56 85
+axolile,huhu,NGKKEG001,85 45 98 75
+Phelokazi,Ngalo,NGLLEL001,90 85 45 65
+lelethu,msuthu,NGKKEG001,12 100 9 75
+onke,msetu,HHFIR001,56 98 78 96
+lelethu,msuthu,NGKKEG001,33 99 80 67
+lelethu,ngalo,ngllel001,89 75 85 96
