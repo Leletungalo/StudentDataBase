@@ -42,17 +42,23 @@ int main(int agrc , char *gaga[]){
             cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
+
+
         }else if (selection == "2"){ // save the database
             NGLLEL001::deleteFile();
             NGLLEL001::clear();
+
             NGLLEL001::saveDataBase();
             cout << "Entered infomation saved" << endl;
             cout << " " << endl;
             cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
+
+
         }else if (selection == "3") { // display a selected student info
             NGLLEL001::clear();
+
             string tempstudentNumber; 
             cout << "Enter the student number and press return" << endl;
             cin >> tempstudentNumber;
@@ -61,8 +67,11 @@ int main(int agrc , char *gaga[]){
             cout << "0 Add a student" << '\n' << "1 Read Database" << '\n' << "2 Save Data" << '\n' << "3 Display student infomation" << '\n' << "4 Grade student" << '\n' << "q Quit" << endl;
             cout << "Enter a number (or q to quit) and press return" << endl;
             cin  >> selection;
+
+
         }else if (selection == "4") { // grade a selected student
             NGLLEL001::clear();
+            
             string tempstudentNumber;
             cout << "Enter the student number and press return" << endl;
             cin >> tempstudentNumber;

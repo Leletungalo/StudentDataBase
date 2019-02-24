@@ -12,7 +12,13 @@ using namespace std;
     };
 
 vector<students> database;
-/*adds a students infomation into the database
+/* adds a students infomation into the vector which is temporary starage
+ * accepts four parameters
+ * name          -Students Name
+ * surname       -Students Surname
+ * studentNumber -Students StudentNumber
+ * classRecord   -Students ClassRecord
+ * return a void
 */
 void NGLLEL001::addStudent(string name,string surname, string studentNumber, string classRecord){
     
@@ -25,6 +31,7 @@ void NGLLEL001::addStudent(string name,string surname, string studentNumber, str
 
         database.push_back(student);
     }else{
+        /*Checks for duplicates*/
         int count = 0;
         for(int i = 0; i < database.size() - 1; i++){
             
@@ -47,6 +54,9 @@ void NGLLEL001::addStudent(string name,string surname, string studentNumber, str
         
     }
 }
+/* Read every thing that has entered and displays it on Screen
+ * Returns a void
+*/
 void NGLLEL001::readDataBase(){
     if (database.size() == 0) {
         cout << "The databese is emty " << endl;
@@ -61,6 +71,10 @@ void NGLLEL001::readDataBase(){
         }
     }
 }
+/* Takes every that has been entered and Save it in a file
+ * Returns a void
+*/
+
 void NGLLEL001::saveDataBase(){
 
     fstream savefile;
@@ -69,8 +83,13 @@ void NGLLEL001::saveDataBase(){
         savefile << it[0].name << "," << it[0].surname << "," << it[0].studentNumber << "," << it[0].classRecord << endl;
     }
     savefile.close();
-
 }
+
+/* Displays the infomation of a Student that was searched
+ * Take one parameter 
+ * studentNumber -Student's Student Number
+ * Returns a void
+*/
 void NGLLEL001::displayStudentRecord(string studentNumber){
     if (database.size() == 0) {
         cout << "database emty" << endl;
@@ -90,6 +109,12 @@ void NGLLEL001::displayStudentRecord(string studentNumber){
     }
     
 }
+
+/* Calculate the avarage of a student that is searched
+ * Take one parameter 
+ * studentNumber -Student's Student Number
+ * Returns a int
+*/
 int  NGLLEL001::studentGrade(string studentNumber){
     if (database.size() == 0) {
         cout << "database emty" << endl;
@@ -125,11 +150,15 @@ int  NGLLEL001::studentGrade(string studentNumber){
         
     }
 }
-
+/*clears the terminal
+ * Returns a void
+*/
 void NGLLEL001::clear(){
     system("clear");
 }
-
+/* reads from a file and Store in vector
+ * Returns a void
+*/
 void NGLLEL001::readFromFile(){
 
     string temp;
@@ -160,7 +189,9 @@ void NGLLEL001::readFromFile(){
         }
         read.close();
 }
-
+/* Delete a file
+ * Returns a void
+*/
 void NGLLEL001::deleteFile(){
-    system("rm testFile.txt");
+    system("rm *.txt");
 }
